@@ -687,6 +687,7 @@ public class StdTaskFrameworkService implements TaskFrameworkService {
                 JobAttributeEntity::getAttributeValue));
     }
 
+
     private void handleTaskResult(String jobType, TaskResult taskResult) {
         for (ResultProcessor processor : resultProcessors) {
             if (processor.interested(jobType)) {
